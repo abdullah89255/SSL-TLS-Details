@@ -7,7 +7,12 @@
 - **Data Integrity:** Ensures that the data is not tampered with during transmission.
 
 ---
-
+```bash
+chmod +x tls_audit.sh
+./tls_audit.sh example.com
+# or pass multiple host:ports (default port 443) and optional mail port for STARTTLS:
+./tls_audit.sh example.com:443 mail.example.com:25
+```
 ### **Types of SSL/TLS Certificates with Examples**
 
 1. **Single-Domain SSL Certificates**
